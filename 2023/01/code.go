@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"regexp"
 	"strconv"
 	"strings"
@@ -50,7 +49,7 @@ func run(part2 bool, input string) any {
 					numbers[i] = m[number]
 				}
 			}
-			fmt.Println(putEmTogether(numbers))
+
 			result += putEmTogether(numbers)
 		}
 		return result
